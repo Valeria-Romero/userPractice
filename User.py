@@ -21,7 +21,7 @@ class User:
         self.balance += amount
 
     def transfer_money(self,amount,other_user):
-        self.amount -= amount
-        other_user.amount += amount
+        self.balance -= amount
+        other_user.balance += amount
         self.display_user_balance()
         other_user.display_user_balance()
